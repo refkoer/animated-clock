@@ -6,20 +6,21 @@ html {
   height: 300px;
   margin: 50px auto;
   width: 300px;
-  position: absolute;
+  position: relative;
 
   background: transparent url("../images/clock-face.svg") no-repeat center center;
 }
 
 .center {
   width: 28px;
-  position: relative;
+  position: absolute;;
   left: 33%;
   top: 80px;
 }
 
 .hand {
   width: 14px;
+  position: absolute;
 }
 
 .hand-hour {
