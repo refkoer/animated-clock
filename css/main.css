@@ -6,12 +6,16 @@ html {
   height: 300px;
   margin: 50px auto;
   width: 300px;
+  position: absolute;
 
   background: transparent url("../images/clock-face.svg") no-repeat center center;
 }
 
 .center {
   width: 28px;
+  position: relative;
+  left: 33%;
+  top: 80px;
 }
 
 .hand {
@@ -19,9 +23,30 @@ html {
 }
 
 .hand-hour {
+  transform-origin: center bottom;
+  animation: spin 3s linear infinite;
+  position: relative;
+  left: 47%;
+  top: 72px;
 
 }
 
 .hand-minute {
+  transform-origin: center bottom;
+  animation: spin 1s linear infinite;
+  position: relative;
+  left: 41%;
+  top: 72px;
 
+}
+
+@keyframes spin {
+
+ 0% {
+   transform: rotate(0deg);
+ }
+
+ 100% {
+   transform: rotate(360deg);
+ }
 }
